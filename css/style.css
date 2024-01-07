@@ -1,34 +1,57 @@
+@import url("");
+
 * {
-  background-color: black;
-  font-family: monospace, sans-serif;
-  color: rgb(250, 232, 219);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  padding: 10%;
-}
-
-h1 {
-  color: rgb(250, 232, 219);
-  transition: color 0.2s ease-in-out 0.2;
-  padding: 0.5rem;
+  margin: 0.5rem;
   font-family: "BOS";
-  font-size: bold;
-  font-style: italic;
+  text-align: center;
 }
 
-h1:hover {
-  color: red;
-  transition-delay: 0s;
+nav {
+  border: 2px solid #333;
+  border-radius: 2rem;
+  margin: 0 auto 1rem;
+  max-width: 600px;
+  font-size: 3rem;
+  line-height: 7rem;
 }
 
-p {
-  text-align: left;
-  text-indent: 2em;
-  line-height: 1.5rem;
-  font-style: normal;
+h2 {
+  padding: 1rem;
+  background-color: gold;
+  border-radius: 2rem 2rem 0 0;
 }
 
+ul {
+  list-style: none;
+}
+
+li {
+  border-top: 1px solid #333;
+}
+
+
+li a {
+  display: block;
+
+}
+li a,
+li a:visited {
+  text-decoration: none;
+  color: #333;
+}
+
+li a:hover,
+li a:focus {
+  background: #333;
+  color: whitesmoke;
+  cursor: pointer;
+}
 @font-face {
   font-family: "BOS";
   src: url(../assets/fonts/Bookman-Old-Style/bookmanoldstyle.ttf);
