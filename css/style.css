@@ -1,0 +1,35 @@
+* {
+  background-color: black;
+  font-family: monospace, sans-serif;
+  color: rgb(250, 232, 219);
+}
+
+body {
+  padding: 10%;
+}
+
+h1 {
+  color: rgb(250, 232, 219);
+  transition: color 0.2s ease-in-out 0.2;
+  padding: 0.5rem;
+  font-family: "BOS";
+  font-size: bold;
+  font-style: italic;
+}
+
+h1:hover {
+  color: red;
+  transition-delay: 0s;
+}
+
+p {
+  text-align: left;
+  text-indent: 2em;
+  line-height: 1.5rem;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BOS";
+  src: url(../assets/fonts/Bookman-Old-Style/bookmanoldstyle.ttf);
+}
