@@ -61,7 +61,8 @@ li a:hover {
 
 img {
   margin-top: 2rem;
-
+  border-radius: 2rem;
+  
 }
 
 @font-face {
