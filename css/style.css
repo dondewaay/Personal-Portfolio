@@ -1,3 +1,5 @@
+@import url();
+
 * {
   padding: 0;
   margin: 0;
@@ -12,7 +14,12 @@
 
 body {
   font-size: 1.5rem;
-  font-family: monospace, Arial, Helvetica, sans-serif;
+  font-family: "Terminus";
+}
+
+p {
+  padding: 5%;
+  color: black;
 }
 
 ul {
@@ -47,4 +54,9 @@ li a:hover {
 @font-face {
   font-family: "BOS";
   src: url(../assets/fonts/Bookman-Old-Style/bookmanoldstyle.ttf);
+}
+
+@font-face {
+  font-family: "Terminus";
+  src: url(../assets/fonts/Terminus/TerminusTTF-4.49.3.ttf)
 }
