@@ -7,7 +7,7 @@
 .gradient {
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(to top right, red, rgb(255, 111, 0));
+  background-image: linear-gradient(to top right, red, rgb(255, 162, 0));
 }
 
 body {
@@ -23,7 +23,7 @@ main {
 
 ul {
   list-style: none;
-  padding: 0.3rem;
+  padding: 0.5rem;
   background-color: black;
   margin: 0;
 }
@@ -45,20 +45,20 @@ li {
   text-align: right;
 }
 
-li.left-aligned {
-  text-align: left;
-}
-
 li a {
+  padding-right: 0.5rem;
   color: whitesmoke;
   text-decoration: none;
-  transition: 0.35s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.pad-left {
+  padding-right: 5rem;
 }
 
 li a:hover {
   color: red;
 }
-
 
 img {
   margin-top: 3rem;
