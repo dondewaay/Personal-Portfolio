@@ -1,7 +1,10 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+* {}
+
+body {
+  font-size: 1.5rem;
+  font-family: Roboto;
 }
 
 .gradient {
@@ -10,68 +13,22 @@
   background-image: linear-gradient(to top right, red, rgb(255, 162, 0));
 }
 
-body {
-  font-size: 2rem;
-  font-family: "Terminus";
+.columns {
+  columns: 4 250px;
+  column-rule: 3px solid #333;
 }
 
-main {
-  padding: 0 3rem 0 3rem;
-  color: black;
-  text-emphasis-style: bold;
+.columns p {
+  margin-top: 0;
 }
 
-ul {
-  list-style: none;
-  padding: 0.5rem;
-  background-color: black;
-  margin: 0;
-}
-
-p {
-  color: whitesmoke;
-  background-color: rgb(20, 20, 20);
-  padding: 2rem;
-  border-radius: 2rem;
-  box-shadow: 0px 5px 15px black;
-  transition: 0.35s ease-in-out;
-  margin-top: 3rem;
-}
-
-li {
-  display: inline-block;
-  color: whitesmoke;
-  margin-inline: 0;
-  text-align: right;
-}
-
-li a {
-  padding-right: 0.5rem;
-  color: whitesmoke;
-  text-decoration: none;
-  transition: 0.2s ease-in-out;
-}
-
-.pad-left {
-  padding-right: 5rem;
-}
-
-li a:hover {
-  color: red;
-}
-
-img {
-  margin-top: 3rem;
-  border-radius: 2rem;
-  max-width: 100%;
-  transition: 0.35s ease-in-out;
-  box-shadow: 0px 5px 15px black;
-}
-
-.hov:hover {
-  box-shadow: 0px 30px 50px black;
-  transition: 0.35s ease-in-out;
-  transform: scale(1.02)
+.columns h2 {
+  margin-top: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  break-inside: avoid;
+  break-before: column;
 }
 
 @font-face {
