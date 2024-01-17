@@ -1,42 +1,32 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-* {}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* GENERAL STYLES */
 
 body {
-  font-size: 1.5rem;
-  font-family: Roboto;
+  font: 1.5rem monospace;
+  min-height: 100vh;
+  color: whitesmoke;
+  background-color: #000;
 }
 
-.gradient {
+div {
   width: 100vw;
-  height: 100vh;
-  background-image: linear-gradient(to top right, red, rgb(255, 162, 0));
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.columns {
-  columns: 4 250px;
-  column-rule: 3px solid #333;
-}
-
-.columns p {
-  margin-top: 0;
-}
-
-.columns h2 {
-  margin-top: 0;
-  background-color: #333;
-  color: #fff;
-  padding: 1rem;
-  break-inside: avoid;
-  break-before: column;
-}
-
-@font-face {
-  font-family: "BOS";
-  src: url(../assets/fonts/Bookman-Old-Style/bookmanoldstyle.ttf);
-}
-
-@font-face {
-  font-family: "Terminus";
-  src: url(../assets/fonts/Terminus/TerminusTTF-4.49.3.ttf);
+button {
+  background-color: royalblue;
 }
