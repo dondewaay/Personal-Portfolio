@@ -1,11 +1,5 @@
-// document.getElementById("count-el").innerText = 5
+let errorPara = document.getElementById("error")
 
-let count = 0
-
-console.log(count)
-
-
-
-let myAge = 22
-
-console.log(myAge)
+function purchase() {
+    errorPara.textContent = "something went wrong, please try again"
+}

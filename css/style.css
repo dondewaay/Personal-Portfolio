@@ -14,19 +14,29 @@ img {
 
 body {
   font: 1.5rem monospace;
-  min-height: 100vh;
-  color: whitesmoke;
-  background-color: #000;
-}
-
-div {
   width: 100vw;
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 button {
-  background-color: royalblue;
+  font-size: 1.2rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: black;
+  width: 200px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 25px;
+  border-color: black;
+  background-color: white;
+}
+
+img {
+  justify-content: center;
+  max-width: 300px;
+  max-height: auto;
+}
+
+.red {
+  color: red;
 }
