@@ -1,5 +1,5 @@
-let errorPara = document.getElementById("error")
+const inputBtn = document.getElementById("input-btn")
 
-function purchase() {
-    errorPara.textContent = "something went wrong, please try again"
-}
+inputBtn.addEventListener("click", function() {
+    console.log("clicked from eventListener")
+})
