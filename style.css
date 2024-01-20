@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=inter");
+
 /* HTML RESET */
 
 * {
@@ -15,5 +17,12 @@ img {
 /* GENERAL STYLES */
 
 body {
-  font: 1.5rem monospace;
+  font: 1.5rem inter;
+}
+
+header {
+  display: flexbox;
+}
+
+h1 {
 }
