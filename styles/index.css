@@ -57,3 +57,16 @@ nav h1:hover {
   color: var(--SELCOLOR);
   cursor: pointer;
 }
+
+.billboard {
+  text-decoration: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 12rem;
+}
+
+p span {
+  color: red;
+}
