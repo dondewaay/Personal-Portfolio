@@ -8,6 +8,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  --UNSELCOLOR: hsla(0, 0%, 100%, 0.4);
+  --SELCOLOR: white;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -20,17 +25,35 @@ body {
   font-family: "Inter";
   color: white;
   background-color: #1a1a1a;
+  height: 200vh;
 }
 
 nav {
   display: flex;
   flex-direction: row;
-  align-items: center;
   gap: 2rem;
   z-index: 9999;
   width: 100%;
+  height: 25px;
+  padding: 2rem 4rem 2rem 4rem;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
-a {
-  color: white;
+nav .menu:nth-child(1) {
+  margin-right: auto;
+}
+
+nav h1 {
+  color: var(--UNSELCOLOR);
+  transition: color 0.2s ease-in-out;
+}
+
+nav h1:hover {
+  color: var(--SELCOLOR);
+  cursor: pointer;
 }
