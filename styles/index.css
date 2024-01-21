@@ -11,6 +11,7 @@
 :root {
   --UNSELCOLOR: hsla(0, 0%, 100%, 0.4);
   --SELCOLOR: white;
+  --ACCENT1: #f43201;
 }
 
 img {
@@ -22,7 +23,6 @@ img {
 /* GENERAL STYLES */
 
 body {
-  font-family: "Inter";
   color: white;
   background-color: #1a1a1a;
   height: 200vh;
@@ -50,16 +50,17 @@ nav .menu:nth-child(1) {
 
 nav h1 {
   color: var(--UNSELCOLOR);
-  transition: color 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 nav h1:hover {
   color: var(--SELCOLOR);
+  text-shadow: var(--UNSELCOLOR) 0px 0px 2px;
   cursor: pointer;
 }
 
 .billboard {
-  text-decoration: bold;
+  font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,5 +69,21 @@ nav h1:hover {
 }
 
 p span {
-  color: red;
+  color: var(--ACCENT1);
+  text-shadow: var(--ACCENT1) 0 0 25px;
+}
+
+footer {
+  padding: 2rem;
+  text-align: bottom;
+  bottom: 0;
+  display: flex;
+  height: 400px;
+  width: 100%;
+  background-color: black;
+  justify-content: space-evenly;
+}
+
+footer:nth-child(1) {
+  margin-right: auto;
 }
