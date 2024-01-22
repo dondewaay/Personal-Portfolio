@@ -59,6 +59,13 @@ nav h1:hover {
   cursor: pointer;
 }
 
+button {
+  position: fixed;
+  margin: 2rem;
+  background-color: whitesmoke;
+  border: none;
+}
+
 .billboard {
   font-family: "Ringift";
   display: flex;
