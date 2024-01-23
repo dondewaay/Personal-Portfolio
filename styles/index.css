@@ -12,6 +12,7 @@
   --UNSELCOLOR: hsla(0, 0%, 100%, 0.5);
   --SELCOLOR: white;
   --ACCENT1: #f43201;
+  --BG: #191919
 }
 
 img {
@@ -25,14 +26,19 @@ img {
 body {
   font-family: "Inter";
   color: white;
-  background-color: #191919;
+  background-color: var(--BG);
+  min-height: 100vh;
+}
+
+.main {
+  height: 100vh;
 }
 
 nav {
   display: flex;
   flex-direction: row;
   gap: 2rem;
-  z-index: 999;
+  z-index: 1;
   width: 100%;
   height: 25px;
   padding: 3rem 4rem 3rem 4rem;
@@ -59,11 +65,27 @@ nav h1:hover {
   cursor: pointer;
 }
 
-button {
-  position: fixed;
+.dark-light-toggle {
+  position: sticky;
+  bottom: 2rem;
+  right: 2rem;
+  left: 2rem;
   margin: 2rem;
+  font-size: 3rem;
   background-color: whitesmoke;
+  width: 70px;
+  height: 70px;
+  color: black;
   border: none;
+  cursor: pointer;
+  box-shadow: black 0px 12px 20px;
+  border-radius: 50px;
+  z-index: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+.dark-light-toggle:hover {
+  transform: translate(0, -10px);
 }
 
 .billboard {
@@ -72,16 +94,27 @@ button {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-size: 12vw;
+  font-size: 10vw;
+  cursor: default;
+  -webkit-font-smoothing: antialiased;
+}
+
+.pexel {
+  font-family: "Pexel";
 }
 
 .under {
-  text-decoration: underline;
-  text-decoration-thickness: 5px;
+  font-weight: bold;
 }
 
 .italic {
   font-style: italic;
+}
+
+.outline {
+  color: var(--BG);
+  -webkit-text-stroke: 0.5px;
+  -webkit-text-stroke-color: white;
 }
 
 .dot {
@@ -112,4 +145,9 @@ footer {
 @font-face {
   font-family: TGR;
   src: url(../assets/fonts/Tan\ Grandeur\ Regular/);
+}
+
+@font-face {
+  font-family: Pexel;
+  src: url(../assets/fonts/PexelGrotesk/PexelGrotesk-Regular.otf);
 }
