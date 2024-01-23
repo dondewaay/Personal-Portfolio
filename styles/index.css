@@ -84,6 +84,7 @@ nav h1 {
 nav h1:hover {
   color: var(--TEXT);
   text-shadow: var(--UNSELCOLOR) 0px 0px 2px;
+
   cursor: pointer;
 }
 
