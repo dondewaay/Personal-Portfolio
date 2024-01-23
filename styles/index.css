@@ -9,10 +9,14 @@
 }
 
 :root {
-  --UNSELCOLOR: hsla(0, 0%, 100%, 0.5);
+  --UNSELCOLOR: hsla(0, 0%, 100%, 0.6);
   --SELCOLOR: white;
   --ACCENT1: #f43201;
   --BG: #191919
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 img {
@@ -25,13 +29,12 @@ img {
 
 body {
   font-family: "Inter";
-  color: white;
+  color: var(--SELCOLOR);
   background-color: var(--BG);
-  min-height: 100vh;
 }
 
-.main {
-  height: 100vh;
+main {
+  min-height: 200vh;
 }
 
 nav {
@@ -65,14 +68,26 @@ nav h1:hover {
   cursor: pointer;
 }
 
+footer {
+  font-size: 1.5rem;
+  padding: 3rem 4rem 3rem 4rem;
+  justify-content: space-between;
+  align-items: flex-end;
+  display: flex;
+  min-height: 120px;
+  width: 100%;
+  background-color: black;
+  bottom: 0;
+}
+
 .dark-light-toggle {
   position: sticky;
-  bottom: 2rem;
-  right: 2rem;
-  left: 2rem;
-  margin: 2rem;
+  bottom: 4rem;
+  right: 4rem;
+  left: 4rem;
+  margin: 4rem;
   font-size: 3rem;
-  background-color: whitesmoke;
+  background-color: var(--SELCOLOR);
   width: 70px;
   height: 70px;
   color: black;
@@ -82,6 +97,7 @@ nav h1:hover {
   border-radius: 50px;
   z-index: 1;
   transition: all 0.2s ease-in-out;
+  margin-left: auto;
 }
 
 .dark-light-toggle:hover {
@@ -89,7 +105,7 @@ nav h1:hover {
 }
 
 .billboard {
-  font-family: "Ringift";
+  font-family: "Rostemary";
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,8 +119,8 @@ nav h1:hover {
   font-family: "Pexel";
 }
 
-.under {
-  font-weight: bold;
+.roste {
+  font-family: "Rostemary";
 }
 
 .italic {
@@ -114,7 +130,7 @@ nav h1:hover {
 .outline {
   color: var(--BG);
   -webkit-text-stroke: 0.5px;
-  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-color: var(--SELCOLOR);
 }
 
 .dot {
@@ -122,19 +138,24 @@ nav h1:hover {
   text-shadow: var(--ACCENT1) 0 0 25px;
 }
 
-footer {
-  font-size: 1.2rem;
-  padding: 2rem;
-  justify-content: bottom;
-  bottom: 0;
-  display: flex;
-  min-height: 200px;
-  width: 100%;
-  background-color: black;
+.prevent-select {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .right {
-  margin-right: auto;
+  margin-left: auto;
+}
+
+p a {
+  color: var(--SELCOLOR);
+  text-decoration: none;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
 }
 
 @font-face {
@@ -150,4 +171,9 @@ footer {
 @font-face {
   font-family: Pexel;
   src: url(../assets/fonts/PexelGrotesk/PexelGrotesk-Regular.otf);
+}
+
+@font-face {
+  font-family: Rostemary;
+  src: url(../assets/fonts/rostemary/Rostemary.ttf);
 }
