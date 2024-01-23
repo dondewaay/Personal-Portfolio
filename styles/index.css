@@ -9,20 +9,20 @@
 }
 
 :root {
-  --UNSELCOLOR: hsla(0, 0%, 100%, 0.7);
-  --TEXT: white;
-  --UNTEXT: black;
-  --ACCENT: #f43201;
-  --BG: #191919;
-  --FOOTERTEXT: white;
-}
-
-.dark-theme {
-  --UNSELCOLOR: hsla(0, 100%, 0%, 0.7);
+  --UNSELCOLOR: hsla(0, 100%, 0%, 0.6);
   --TEXT: black;
   --UNTEXT: #f3f3e8;
   --ACCENT: #f43201;
   --BG: #f3f3e8;
+  --FOOTERTEXT: white;
+}
+
+.dark-theme {
+  --UNSELCOLOR: hsla(0, 0%, 100%, 0.6);
+  --TEXT: white;
+  --UNTEXT: black;
+  --ACCENT: #f43201;
+  --BG: #191919;
 }
 
 html {
@@ -41,7 +41,7 @@ body {
   font-family: "Inter";
   color: var(--TEXT);
   background-color: var(--BG);
-  transition: all 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 main {
@@ -64,6 +64,11 @@ nav {
   left: 0;
   transition: all 0.2 ease-in-out;
   background-color: var(--BG);
+  box-shadow: var(--BG) 0px 35px 30px;
+}
+
+.shadow {
+  width: 150vw;
   box-shadow: var(--BG) 0px 35px 30px;
 }
 
@@ -151,6 +156,7 @@ footer {
 .dot {
   color: var(--ACCENT);
   text-shadow: var(--ACCENT) 0 0 25px;
+  font-family: Arial;
 }
 
 .prevent-select {

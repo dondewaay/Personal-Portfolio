@@ -2,17 +2,18 @@
 
 let darkMode = localStorage.getItem("darkMode")
 const darkModeToggle = document.getElementById("dark-mode-toggle")
+const darkLightDefault = window.matchMedia("(prefers-color-scheme: dark)")
 
 function enableDarkMode() {
     document.body.classList.add("dark-theme")
     localStorage.setItem("darkMode", "enabled")
-    darkModeToggle.innerHTML = "🌙"
+    darkModeToggle.innerHTML = "☀️"
 }
 
 function disableDarkMode() {
     document.body.classList.remove("dark-theme")
-    localStorage.setItem("darkMode", null)
-    darkModeToggle.innerHTML = "☀️"
+    localStorage.setItem("darkMode", "disabled")
+    darkModeToggle.innerHTML = "🌙"
 }
 
 darkModeToggle.addEventListener('click', function() {
@@ -25,6 +26,10 @@ darkModeToggle.addEventListener('click', function() {
 })
 
 if (darkMode === "enabled") {
+    enableDarkMode()
+} else if (darkMode === "disabled") {
+    disableDarkMode()
+} else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
     enableDarkMode()
 }
 
