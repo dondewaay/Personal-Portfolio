@@ -9,10 +9,20 @@
 }
 
 :root {
-  --UNSELCOLOR: hsla(0, 0%, 100%, 0.6);
-  --SELCOLOR: white;
-  --ACCENT1: #f43201;
-  --BG: #191919
+  --UNSELCOLOR: hsla(0, 0%, 100%, 0.7);
+  --TEXT: white;
+  --UNTEXT: black;
+  --ACCENT: #f43201;
+  --BG: #191919;
+  --FOOTERTEXT: white;
+}
+
+.dark-theme {
+  --UNSELCOLOR: hsla(0, 100%, 0%, 0.7);
+  --TEXT: black;
+  --UNTEXT: #f3f3e8;
+  --ACCENT: #f43201;
+  --BG: #f3f3e8;
 }
 
 html {
@@ -29,8 +39,9 @@ img {
 
 body {
   font-family: "Inter";
-  color: var(--SELCOLOR);
+  color: var(--TEXT);
   background-color: var(--BG);
+  transition: all 0.2s ease-in-out;
 }
 
 main {
@@ -51,6 +62,9 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
+  transition: all 0.2 ease-in-out;
+  background-color: var(--BG);
+  box-shadow: var(--BG) 0px 35px 30px;
 }
 
 nav .menu:nth-child(1) {
@@ -63,44 +77,45 @@ nav h1 {
 }
 
 nav h1:hover {
-  color: var(--SELCOLOR);
+  color: var(--TEXT);
   text-shadow: var(--UNSELCOLOR) 0px 0px 2px;
   cursor: pointer;
 }
 
 footer {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   padding: 3rem 4rem 3rem 4rem;
   justify-content: space-between;
   align-items: flex-end;
   display: flex;
-  min-height: 120px;
+  height: 210px;
   width: 100%;
   background-color: black;
   bottom: 0;
+  color: var(--FOOTERTEXT);
 }
 
-.dark-light-toggle {
+.floating {
   position: sticky;
+  background-color: var(--TEXT);
+  width: 70px;
+  height: 70px;
+  z-index: 1;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border-radius: 50px;
+  box-shadow: black 0px 12px 20px;
+  color: var(--UNTEXT);
+  font-size: 3rem;
+  margin: 4rem;
   bottom: 4rem;
   right: 4rem;
   left: 4rem;
-  margin: 4rem;
-  font-size: 3rem;
-  background-color: var(--SELCOLOR);
-  width: 70px;
-  height: 70px;
-  color: black;
-  border: none;
-  cursor: pointer;
-  box-shadow: black 0px 12px 20px;
-  border-radius: 50px;
-  z-index: 1;
-  transition: all 0.2s ease-in-out;
   margin-left: auto;
 }
 
-.dark-light-toggle:hover {
+.floating:hover {
   transform: translate(0, -10px);
 }
 
@@ -130,12 +145,12 @@ footer {
 .outline {
   color: var(--BG);
   -webkit-text-stroke: 0.5px;
-  -webkit-text-stroke-color: var(--SELCOLOR);
+  -webkit-text-stroke-color: var(--TEXT);
 }
 
 .dot {
-  color: var(--ACCENT1);
-  text-shadow: var(--ACCENT1) 0 0 25px;
+  color: var(--ACCENT);
+  text-shadow: var(--ACCENT) 0 0 25px;
 }
 
 .prevent-select {
@@ -146,10 +161,11 @@ footer {
 
 .right {
   margin-left: auto;
+  text-align: right;
 }
 
 p a {
-  color: var(--SELCOLOR);
+  color: var(--FOOTERTEXT);
   text-decoration: none;
 }
 
