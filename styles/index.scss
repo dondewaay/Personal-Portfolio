@@ -25,10 +25,6 @@
   --BG: #191919;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 img {
   display: block;
   max-width: 100%;
@@ -45,11 +41,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-}
-
-main {
-  min-height: 200vh;
-  margin: 4rem;
 }
 
 nav {
@@ -85,9 +76,19 @@ nav {
   }
 }
 
-.shadow {
-  width: 150vw;
-  box-shadow: var(--BG) 0px 35px 30px;
+main {
+  min-height: 200vh;
+  margin: 4rem;
+}
+
+.billboard {
+  font-family: "Rostemary";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 10vw;
+  cursor: default;
 }
 
 footer {
@@ -124,16 +125,6 @@ footer {
   &:hover {
     transform: translate(0, -10px);
   }
-}
-
-.billboard {
-  font-family: "Rostemary";
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-size: 10vw;
-  cursor: default;
 }
 
 .outline {
