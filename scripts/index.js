@@ -31,6 +31,10 @@ if (darkMode === "enabled") {
   disableDarkMode();
 } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
   enableDarkMode();
+} else if (
+  window.matchMedia("(prefers-color-scheme: dark)").matches === false
+) {
+  disableDarkMode();
 }
 
 /* SCRIPTS */

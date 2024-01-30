@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
 /* HTML RESET */
+
 * {
   padding: 0;
   margin: 0;
@@ -34,6 +36,7 @@ img {
 }
 
 /* GENERAL STYLES */
+
 body {
   font-family: "Inter";
   color: var(--TEXT);
@@ -66,20 +69,20 @@ nav {
   transition: all 0.2 ease-in-out;
   background-color: var(--BG);
   box-shadow: var(--BG) 0px 35px 30px;
-}
-nav .menu:nth-child(1) {
-  margin-right: auto;
-  white-space: nowrap;
-}
-nav h1 {
-  color: var(--UNSELCOLOR);
-  transition: 0.2s ease-in-out;
-}
-nav h1:hover {
-  color: var(--TEXT);
-  text-shadow: var(--UNSELCOLOR) 0px 0px 10px;
-  transform: scale(1.05);
-  cursor: pointer;
+  .menu:nth-child(1) {
+    margin-right: auto;
+    white-space: nowrap;
+  }
+  h1 {
+    color: var(--UNSELCOLOR);
+    transition: 0.2s ease-in-out;
+    &:hover {
+      color: var(--TEXT);
+      text-shadow: var(--UNSELCOLOR) 0px 0px 10px;
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+  }
 }
 
 .shadow {
@@ -118,9 +121,9 @@ footer {
   right: 4rem;
   left: 4rem;
   margin-left: auto;
-}
-.floating:hover {
-  transform: translate(0, -10px);
+  &:hover {
+    transform: translate(0, -10px);
+  }
 }
 
 .billboard {
@@ -146,8 +149,8 @@ footer {
 
 .prevent-select {
   -webkit-user-select: none;
-  -moz-user-select: none;
-       user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .right {
@@ -155,9 +158,11 @@ footer {
   text-align: right;
 }
 
-p a {
-  color: var(--FOOTERTEXT);
-  text-decoration: none;
+p {
+  a {
+    color: var(--FOOTERTEXT);
+    text-decoration: none;
+  }
 }
 
 .pexel {
@@ -176,15 +181,18 @@ p a {
   font-family: Ringift;
   src: url(../assets/fonts/Ringift/Ringift.otf);
 }
+
 @font-face {
   font-family: TGR;
   src: url(../assets/fonts/Tan\ Grandeur\ Regular/);
 }
+
 @font-face {
   font-family: Pexel;
   src: url(../assets/fonts/PexelGrotesk/PexelGrotesk-Regular.otf);
 }
+
 @font-face {
   font-family: Rostemary;
   src: url(../assets/fonts/rostemary/Rostemary.ttf);
-}/*# sourceMappingURL=index.css.map */
+}
