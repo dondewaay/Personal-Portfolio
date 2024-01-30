@@ -42,10 +42,14 @@ body {
   color: var(--TEXT);
   background-color: var(--BG);
   transition: 0.2s ease-in-out;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 main {
   min-height: 200vh;
+  margin: 4rem;
 }
 
 nav {
@@ -83,8 +87,7 @@ nav h1 {
 
 nav h1:hover {
   color: var(--TEXT);
-  text-shadow: var(--UNSELCOLOR) 0px 0px 2px;
-
+  text-shadow: var(--UNSELCOLOR) 0px 0px 10px;
   cursor: pointer;
 }
 
@@ -133,7 +136,6 @@ footer {
   height: 100vh;
   font-size: 10vw;
   cursor: default;
-  -webkit-font-smoothing: antialiased;
 }
 
 .pexel {
@@ -157,7 +159,7 @@ footer {
 .dot {
   color: var(--ACCENT);
   text-shadow: var(--ACCENT) 0 0 25px;
-  font-family: Arial;
+  font-family: ;
 }
 
 .prevent-select {
