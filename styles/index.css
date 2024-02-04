@@ -138,7 +138,7 @@ footer {
 .prevent-select {
   -webkit-user-select: none;
   -moz-user-select: none;
-       user-select: none;
+  user-select: none;
 }
 
 .right {
@@ -178,4 +178,4 @@ p a {
 @font-face {
   font-family: Rostemary;
   src: url(../assets/fonts/rostemary/Rostemary.ttf);
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */
